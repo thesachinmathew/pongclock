@@ -1,8 +1,18 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* Allow the app to use the full viewport width to avoid horizontal scroll */
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+/* Ensure the html/body/root take full height and have no default margins */
+html, body, #root {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
