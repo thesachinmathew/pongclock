@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure there's no default body margin (browsers add 8px by default)
+	 and disable scrolling so the canvas fills the viewport. */
+html, body, #root {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
